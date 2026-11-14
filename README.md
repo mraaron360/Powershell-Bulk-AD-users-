@@ -6,7 +6,7 @@
 
 -----
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
@@ -61,7 +61,7 @@ This lab provides a production-pattern PowerShell toolkit for IAM teams managing
 
 ### 1. Verify the AD Module
 
-![Environment Setup](screenshots/01_env_setup.png)
+
 
 ```powershell
 # Check if ActiveDirectory module is available
@@ -288,7 +288,7 @@ Get-ADGroupMember -Identity "GRP_Nursing_Staff" -Recursive |
 
 #### Department-Based Group Sync
 
-![Group Sync](screenshots/05_group_sync.png)
+
 
 > The sync script reconciles both directions: adds users whose department matches AND removes users whose department no longer matches. A transfer from Nursing → Finance automatically strips the Nursing group membership.
 
