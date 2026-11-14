@@ -1,4 +1,4 @@
-#  IAM PowerShell Automation Lab
+#  IAM PowerShell Automation 
 
 ### Bulk Active Directory User & Group Management
 
