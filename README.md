@@ -1,4 +1,4 @@
-# 🔐 IAM PowerShell Automation Lab
+#  IAM PowerShell Automation Lab
 
 ### Bulk Active Directory User & Group Management
 
@@ -81,9 +81,9 @@ Get-ADDomain | Select-Object DNSRoot, PDCEmulator, RIDMaster
 
 ### 2. Build the Lab OU Structure
 
-![OU Structure Creation](screenshots/02_ou_structure.png)
 
-> ⚠️ **Run once.** Creates an isolated OU hierarchy — no production OUs are touched.
+
+>  **Run once.** Creates an isolated OU hierarchy — no production OUs are touched.
 
 ```powershell
 $domain  = "DC=corp,DC=local"
@@ -136,11 +136,10 @@ Carlos,Reyes,creyes,IT,Sys Admin,mgr.chen,Nashville,EMP005
 
 Provisions AD users from CSV with standardized UPN format, initial password, OU placement, and duplicate detection.
 
-![Bulk User Provisioning](screenshots/03_bulk_provision.png)
+
 
 > Running with `-WhatIf` first simulates all actions without making any changes. After reviewing the output, remove `-WhatIf` for the live run.
 
-![Idempotency Check](screenshots/04_idempotency.png)
 
 > Re-running the same script skips existing users and logs them as `Skipped-Exists` — no duplicates, no errors.
 
