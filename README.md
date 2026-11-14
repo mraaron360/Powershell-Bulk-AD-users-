@@ -404,7 +404,7 @@ $report | Export-Csv "C:\IAM_Lab\stale_members_$(Get-Date -f yyyyMMdd).csv" -NoT
 
 **File:** `Scripts/Invoke-Offboard.ps1`
 
-![Offboarding](screenshots/06_offboard.png)
+
 
 > Always run with `-WhatIf` first to confirm all 4 steps are correct before going live.
 
@@ -488,7 +488,6 @@ Write-Host "`nOffboard complete. $($log.Count) account(s) processed." -Foregroun
 
 **File:** `Scripts/Get-PrivilegedGroupReport.ps1`
 
-![Privileged Group Report](screenshots/07_priv_report.png)
 
 > Disabled accounts still holding privileged group membership are flagged as `DISABLED-REVIEW` — a common finding in IAM audits.
 
@@ -546,7 +545,7 @@ Send-MailMessage -To "iam-team@corp.local" `
 
 -----
 
-## Lab Task Checklist
+##  Task Checklist
 
 ### Module 01 — Environment
 
